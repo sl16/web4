@@ -1,7 +1,10 @@
 body{
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 
 /*HEART SIZES*/
@@ -36,7 +39,7 @@ body{
 .heartsmall{
   width:20px;
   height: 20px;
-  background-color:red;
+  background-color:purple;
   transform: rotate(-45deg);
 }
 
@@ -46,7 +49,7 @@ body{
   width:20px;
   border-radius: 50%;
   position:absolute;
-  background-color: red;
+  background-color:purple;
   margin-top:-10px;
 }
 
@@ -54,7 +57,7 @@ body{
   content: "";
   height:20px;
   width:20px;
-  background-color: red;
+  background-color:purple;
   border-radius: 50%;
   position: absolute;
   left:10px;
@@ -63,7 +66,7 @@ body{
 .heartmedium{
   width:30px;
   height:30px;
-  background-color:red;
+  background-color:pink;
   transform: rotate(-45deg);
 }
 
@@ -73,7 +76,7 @@ body{
   width:30px;
   border-radius: 50%;
   position:absolute;
-  background-color: red;
+  background-color: pink;
   margin-top:-15px;
 }
 
@@ -81,7 +84,7 @@ body{
   content: "";
   height:30px;
   width:30px;
-  background-color: red;
+  background-color: pink;
   border-radius: 50%;
   position: absolute;
   left:15px;
@@ -146,6 +149,43 @@ body{
 
 @keyframes fast {
   50% {
-    top:10px;
+    margin-top:5vw;
   }
+}
+
+.slow{
+  animation-name: slow;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+}
+
+@keyframes slow {
+  50% {
+    margin-left:5vw;
+  }
+}
+
+.pulse{
+  animation-name: pulse;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/*TEXT*/
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 7em;
+  display:block;
+  text-align: center;
+  margin-top:5em;
+  color:white;
+  text-shadow: -4px 4px pink;
 }
