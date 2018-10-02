@@ -1,0 +1,151 @@
+body{
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*HEART SIZES*/
+
+.heartbig{
+  width:40px;
+  height:40px;
+  background-color:red;
+  transform: rotate(-45deg);
+}
+
+.heartbig::before{
+  content: "";
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  position:absolute;
+  background-color: red;
+  margin-top:-20px;
+}
+
+.heartbig::after {
+  content: "";
+  height:40px;
+  width:40px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left:20px;
+  }
+
+.heartsmall{
+  width:20px;
+  height: 20px;
+  background-color:red;
+  transform: rotate(-45deg);
+}
+
+.heartsmall::before{
+  content: "";
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  position:absolute;
+  background-color: red;
+  margin-top:-10px;
+}
+
+.heartsmall::after {
+  content: "";
+  height:20px;
+  width:20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left:10px;
+  }
+
+.heartmedium{
+  width:30px;
+  height:30px;
+  background-color:red;
+  transform: rotate(-45deg);
+}
+
+.heartmedium::before{
+  content: "";
+  height:30px;
+  width:30px;
+  border-radius: 50%;
+  position:absolute;
+  background-color: red;
+  margin-top:-15px;
+}
+
+.heartmedium::after {
+  content: "";
+  height:30px;
+  width:30px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left:15px;
+  }
+
+/*HEART POSITIONS*/
+
+#pos1{
+  left:5%;
+  top:5%;
+  position:absolute;
+}
+#pos2{
+  left:26%;
+  top:3%;
+  position:absolute;
+}
+#pos3{
+  left:80%;
+  top:36%;
+  position:absolute;
+}
+#pos4{
+  left:40%;
+  top:90%;
+  position:absolute;
+}
+#pos5{
+  left:84%;
+  top:20%;
+  position:absolute;
+}
+#pos6{
+  left:50%;
+  top:45%;
+  position:absolute;
+}
+#pos7{
+  left:69%;
+  top:69%;
+  position:absolute;
+}
+#pos8{
+  left:21%;
+  top:21%;
+  position:absolute;
+}
+#pos9{
+  left:80%;
+  top:50%;
+  position:absolute;
+}
+
+/* ANIMATIONS */
+
+.fast{
+  animation-name: fast;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+}
+
+@keyframes fast {
+  50% {
+    top:10px;
+  }
+}
